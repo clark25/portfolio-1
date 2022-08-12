@@ -1,0 +1,38 @@
+:root{
+  --color-gray-dark: #222831;
+  --color-gray-medium: #393E46;
+  --color-gray-light: #EEEEEE ;
+  --color-yellow: #FFD369 ;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700;900&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, textarea, label, strong, div {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  margin: 0 var(--container-margin);
+  max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+  :root{
+    --container-margin: 55px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root{
+    --container-margin: 120px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root{
+    --container-margin: auto;
+  }
+}    
