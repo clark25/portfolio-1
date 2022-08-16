@@ -9,11 +9,17 @@
   height: 60px;
   padding: 0 1.5rem;
   border-bottom: 2px solid var(--color-gray-light);
+  background-color: var(--color-gray-nav);
 }
 
 .topnav a {
   text-decoration: none;
   display: block;
+  cursor: pointer;
+}
+
+.topnav a:hover{
+  color: var(--color-gray-light);
 }
 
 .logonav{
@@ -68,4 +74,78 @@
 
 .topnav #collapsenav.active{
   display: flex;
+}
+
+.topnav #collapsenav ul{
+  display: flex;
+  list-style: none;
+}
+
+.topnav #collapsenav .linkspagesnav{
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav #collapsenav .linkspagesnav li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% / 3);
+
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.topnav #collapsenav .linkspagesnav li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  height: 100%;
+  width: 100%;
+}
+
+.topnav #collapsenav .linkspagesnav li.active span{
+  height: 10px;
+  border-radius: 10px;
+  width: 60%;
+  background-color: var(--color-yellow);
+}
+
+.topnav #collapsenav .linkspagesnav li a:hover{
+  filter: brightness(0.7);
+}
+
+.topnav #collapsenav .linkspagesnav li a svg{
+  margin-right: 20px;
+}
+
+.topnav #collapsenav .linkspagesnav li:last-of-type{
+  border-bottom: none;
+}
+
+.topnav #collapsenav .linkedingithubnav{
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid var(--color-gray-light);
+}
+
+.topnav #collapsenav .linkedingithubnav li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 60px;
+}
+
+.topnav #collapsenav .linkedingithubnav li svg{
+  height: 40px;
+  width: 40px;
 }
