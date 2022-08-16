@@ -142,10 +142,87 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 60px;
+  height: 100px;
 }
 
 .topnav #collapsenav .linkedingithubnav li svg{
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
+}
+
+@media(min-width: 1024px){
+  .topnav{
+    position: relative;
+  }
+
+  .topnav .navbar{
+    height: 80px;
+    padding: 0 2rem;
+  }
+
+  .topnav .navbar #hambutton{
+    display: none;
+  }
+
+  .topnav .navbar .logonav{
+    font-size: 2rem !important;
+  }
+
+  .topnav #collapsenav{
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+  }
+
+  .topnav #collapsenav .linkspagesnav{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topnav #collapsenav .linkspagesnav li{
+    border-bottom: none;
+    height: 80px;
+  }
+
+  .topnav #collapsenav .linkspagesnav li a{
+    font-size: 1.25rem;
+    padding: 0 25px;
+  }
+
+  .topnav #collapsenav .linkspagesnav li.active span{
+    width: 100%;
+  }
+
+  .topnav #collapsenav .linkspagesnav li a svg{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+
+
+  .topnav #collapsenav .linkedingithubnav{
+    border-top: none;
+    margin-left: 32px;
+  }
+
+  .topnav #collapsenav .linkedingithubnav li{
+    width: 100px;
+    height: 80px;
+  }
+
+  .topnav #collapsenav .linkedingithubnav li svg{
+    height: 50px;
+    width: 50px;
+  }
+
+}
+
+@media(min-width: 1200px){
+  .topnav #collapsenav .linkspagesnav li a{
+    padding: 0 30px;
+  }
 }
