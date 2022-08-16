@@ -1,10 +1,12 @@
 :root{
+  --color-gray-nav: #13161a;
   --color-gray-dark: #222831;
   --color-gray-medium: #393E46;
   --color-gray-light: #EEEEEE ;
   --color-yellow: #FFD369 ;
   --color-black: #000000;
   --color-white: #FFFFFF;
+  --color-red: #ff1456;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700;900&display=swap');
@@ -12,6 +14,15 @@
 h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, textarea, label, strong, div {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.5px;
+  color: var(--color-gray-light);
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background-color: var(--color-gray-medium);
 }
 
 .container {
