@@ -7,6 +7,8 @@
   --color-black: #000000;
   --color-white: #FFFFFF;
   --color-red: #ff1456;
+
+  --main-padding: 20px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700;900&display=swap');
@@ -30,6 +32,11 @@ body{
   max-width: 1200px;
 }
 
+main{
+  padding: var(--main-padding) 0;
+  min-height: calc(100vh - 60px)
+}
+
 @media (min-width: 768px) {
   :root{
     --container-margin: 55px;
@@ -39,6 +46,11 @@ body{
 @media (min-width: 1024px) {
   :root{
     --container-margin: 120px;
+    --main-padding: 40px;
+  }
+
+  main{
+    min-height: calc(100vh - 80px);
   }
 }
 
