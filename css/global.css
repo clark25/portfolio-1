@@ -34,7 +34,7 @@ body{
 
 main{
   padding: var(--main-padding) 0;
-  min-height: calc(100vh - 60px)
+  min-height: calc(100vh - 60px - 176px);
 }
 
 @media (min-width: 768px) {
@@ -50,7 +50,7 @@ main{
   }
 
   main{
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px - 176px);
   }
 }
 

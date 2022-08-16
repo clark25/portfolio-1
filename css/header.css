@@ -1,3 +1,4 @@
+
 .topnav {
   overflow: hidden;
   background-color: var(--color-gray-dark);
@@ -5,11 +6,19 @@
   width: 100%;
 }
 
-.navbar{
+#navbar{
+  display: flex;
+  align-items: center;
   height: 60px;
   padding: 0 1.5rem;
   border-bottom: 2px solid var(--color-gray-light);
   background-color: var(--color-gray-nav);
+}
+
+#navbar.active{
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .topnav a {
@@ -75,6 +84,10 @@
 
 .topnav #collapsenav.active{
   display: flex;
+  position: fixed;
+  top: 60px;
+  background-color: var(--color-gray-dark);
+  width: 100%;
 }
 
 .topnav #collapsenav ul{
@@ -105,7 +118,8 @@
 .topnav #collapsenav .linkspagesnav li a{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 0 1.5rem;
   transition: 0.4s;
   height: 100%;
   width: 100%;
@@ -114,7 +128,7 @@
 .topnav #collapsenav .linkspagesnav li.active span{
   height: 10px;
   border-radius: 10px;
-  width: 60%;
+  width: 100%;
   background-color: var(--color-yellow);
 }
 
@@ -156,16 +170,16 @@
     position: relative;
   }
 
-  .topnav .navbar{
+  .topnav #navbar{
     height: 80px;
     padding: 0 2rem;
   }
 
-  .topnav .navbar #hambutton{
+  .topnav #navbar #hambutton{
     display: none;
   }
 
-  .topnav .navbar .logonav{
+  .topnav #navbar .logonav{
     font-size: 2rem !important;
   }
 
