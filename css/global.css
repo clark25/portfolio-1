@@ -27,7 +27,7 @@ body{
   background-color: var(--color-gray-medium);
 }
 
-.container {
+.containerpf {
   margin: 0 var(--container-margin);
   max-width: 1200px;
 }
