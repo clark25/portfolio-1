@@ -16,6 +16,7 @@
   text-decoration: none;
   display: block;
   cursor: pointer;
+  color: var(--color-gray-light);
 }
 
 .topnav a:hover{
