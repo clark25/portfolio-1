@@ -10,44 +10,43 @@
   margin: 0.5rem 0 0;
 }
 
-.perfil .infoprincipal{
+.perfil {
   display: flex;
   align-items: center;
   flex-direction: column;
   border-bottom: 1px solid var(--color-gray-light);
 }
 
-.perfil .infoprincipal .fotoperfil{
+.perfil  .fotoperfil{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 150px;
-  height: 150px;
 }
 
-.perfil .infoprincipal .fotoperfil img{
+.perfil  .fotoperfil img{
   width: 150px;
   border-radius: 50%;
 }
 
-.perfil .infoprincipal .infocontent{
+.perfil  .infocontent{
   margin-top: 1.25rem;
 }
 
-.perfil .infoprincipal .infocontent h1{
+.perfil  .infocontent h1{
   font-size: 1.5rem;
   font-weight: 900;
   text-align: center;
 }
 
-.perfil .infoprincipal .infocontent p:first-of-type{
+.perfil  .infocontent p:first-of-type{
   font-size: 0.75rem;
   font-weight: 700;
   text-align: center;
   margin: 0.25rem 0 0;
 }
 
-.perfil .infoprincipal .infocontent h2{
+.perfil  .infocontent h2{
   font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
@@ -60,35 +59,38 @@
     line-height: 1.75rem;
   }
 
-  .perfil .infoprincipal{
+  .perfil {
+    align-items: flex-start;
     flex-direction: row;
     padding-bottom: 2rem;
   }
 
-  .perfil .infoprincipal .fotoperfil{
+  .perfil  .fotoperfil{
+    align-items: flex-start;
+    height: auto;
     width: 200px;
-    height: 200px;
+    margin: 0.5rem 0 0;
   }
 
-  .perfil .infoprincipal .fotoperfil img{
+  .perfil  .fotoperfil img{
     width: 200px;
   }
 
-  .perfil .infoprincipal .infocontent{
+  .perfil  .infocontent{
     margin: 0 0 0 2.5rem;
   }
 
-  .perfil .infoprincipal .infocontent h1{
-    font-size: 2.25rem;
+  .perfil  .infocontent h1{
+    font-size: 3rem;
     text-align: left;
   }
 
-  .perfil .infoprincipal .infocontent p:first-of-type{
+  .perfil  .infocontent p:first-of-type{
     font-size: 1rem;
     text-align: left;
   }
 
-  .perfil .infoprincipal .infocontent h2{
+  .perfil  .infocontent h2{
     font-size: 1.75rem;
     text-align: left;
     margin: 1.5rem 0 0.5rem;
