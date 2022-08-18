@@ -79,7 +79,7 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 60px);
+  height: calc(100% - 60px);
 }
 
 .topnav #collapsenav.active{
