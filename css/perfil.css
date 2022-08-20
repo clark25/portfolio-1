@@ -1,16 +1,6 @@
 .perfil{
   margin: 1.25rem 0 0;
   padding: 1.25rem;
-}
-
-.perfil p{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-align: justify;
-  margin: 0.5rem 0 0;
-}
-
-.perfil {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -39,28 +29,15 @@
   text-align: center;
 }
 
-.perfil  .infocontent p:first-of-type{
+.perfil  .infocontent p{
   font-size: 0.75rem;
   font-weight: 700;
   text-align: center;
   margin: 0.25rem 0 0;
 }
 
-.perfil  .infocontent h2{
-  font-size: 1.25rem;
-  font-weight: 700;
-  text-align: center;
-  margin: 1rem 0 0.25rem;
-}
-
 @media(min-width: 1024px){
-  .perfil p{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .perfil {
-    align-items: flex-start;
     flex-direction: row;
     padding-bottom: 2rem;
   }
@@ -85,14 +62,8 @@
     text-align: left;
   }
 
-  .perfil  .infocontent p:first-of-type{
+  .perfil  .infocontent p{
     font-size: 1rem;
     text-align: left;
-  }
-
-  .perfil  .infocontent h2{
-    font-size: 1.75rem;
-    text-align: left;
-    margin: 1.5rem 0 0.5rem;
   }
 }
